@@ -1,0 +1,13 @@
+<%= form_for @picture do |f| %>
+  <p>
+    <%= f.label :content %>
+    <%= f.text_field :content %>
+  </p>
+  <p>
+    <%= f.label :size %>
+    <%= f.text_field :size %>
+  </p>
+  <p>
+    <%= f.submit 'Update picture' %>
+  </p>
+<% end %>

@@ -15,7 +15,7 @@
 <%= @pictures.each do |picture| %>
 <ul>
   <li>
-    <%= picture.content %>, <%= picture.size %>
+    <%= link_to "#{picture.content}", picture_path(picture) %>, <%= picture.size %>
   </li>
 </ul>
 <% end %>
